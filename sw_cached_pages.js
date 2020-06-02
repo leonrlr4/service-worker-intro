@@ -1,4 +1,4 @@
-const cacheName = 'v1';
+const cacheName = 'v100';
 
 const cacheAssets = [
   'index.html',
@@ -16,6 +16,7 @@ self.addEventListener('install', e => {
       .open(cacheName)
       .then(cache => {
         console.log('Service Worker: Caching Files');
+        // add 的檔案就是讓使用者離線也可以使用
         cache.addAll(cacheAssets);
       })
       .then(() => self.skipWaiting())

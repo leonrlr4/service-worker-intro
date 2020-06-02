@@ -30,7 +30,7 @@ nav ul {
 nav a {
   padding: 10px;
   color: #fff;
-  text-decoration: none;
+  text-decoration: line-through;
 }
 
 nav .current > a {
